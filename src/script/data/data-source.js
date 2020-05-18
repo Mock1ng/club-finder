@@ -1,3 +1,5 @@
+import clubs from './clubs.js';
+
 class DataSource {
     static searchClub = keyword => {
         return new Promise((success, failed) => {
@@ -9,6 +11,8 @@ class DataSource {
         })
     }
 }
+
+export default DataSource;
 
 // class DataSource {
 //     constructor(onSuccess, onFailed) {
